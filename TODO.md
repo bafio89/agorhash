@@ -1,0 +1,32 @@
+- [ ] riswitchare assetIndex testnet
+- [ ] rafactoring frontend? form e build tx, eetc..
+- [ ] sistemare grafica (tooltip vari) (spazio in fondo alla card)
+- [ ] sistemare repository
+- [x] Ordinare risposte in base all'amount - Estrarre sorter
+
+- [ ] backend per leggere solo gli address seguiti
+- [ ] ripulire warnings in compilazione frontend
+- [ ] Sistemare grafica
+
+- [x] sistemare testo della donation card
+- [x] sistemare risposte mettere say it louder al livello del send.
+- [x] aggiungere pagina di spiegazione - con markdown vedi nelle note del pc
+- [x] aggiungere hug nei messaggi
+- [x] filtrare messaggi per indirizzi
+- [x] estrarre support card in component e includerlo anche nall'altra pagina
+- [x] donation page/message
+- [x] mostrare amount - sistemare grafica
+- [x] amount nelle risposte
+- [x] calcola date - mettere round
+- [x] creare token testnet e mainnet
+- [x] ripulire backend
+- [x] Switch da testnet a main net
+- [x] implementare risposte
+- [x] pulsante per fare optin
+- [x] backend kotlin per leggere tx
+  - [x] implmentare endpoint 
+- [x] mettere importo di asset per le tx
+- [x] grafica sui messaggi visualizzati.
+- [x] controllo sul contenuto del messaggio creato (no vuoto)
+- [x] ordinamento tx
+- [x] lettura tx
