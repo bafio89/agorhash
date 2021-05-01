@@ -1,4 +1,3 @@
-- [ ] riswitchare assetIndex testnet
 - [ ] rafactoring frontend? form e build tx, eetc..
 - [ ] sistemare grafica (tooltip vari) (spazio in fondo alla card)
 - [ ] sistemare repository

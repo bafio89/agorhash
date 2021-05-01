@@ -58,18 +58,6 @@ const about = '# AgorHash, a cryptographic decentralised [agora](https://en.wiki
     + '\n'
     + 'Since we are not able to foresee how fare AgorHash Protocol will evolve, the initial distribution of AgorHash ASA will follow a simple airdrop approach to drive adoption, interest and community engagement. Once AgorHash Protocol adoption grows, AGORHASH Reserve Address will then be assigned to an orchestration of Algorand Smart Contracts that will define AGORHASH dynamics into the ecosystem.\n'
     + '\n'
-    + '## Donate or Collaborate\n'
-    + '\n'
-    + 'AgorHash Protocol is a **no-profit open-source side-project**, built for free to protect freedom. AgorHash completely relies on community donations to sustain operational costs (web domain hosting, node\'s maintenance, etc).\n'
-    + '\n'
-    + 'AgorHash is and will always be a free, public, permissionless, decentralised and uncensorable protocol for free speech.\n'
-    + '\n'
-    + 'Keeping AgorHash a protocol of freedom is up to us all. You can contribute in two ways:\n'
-    + '\n'
-    + '1. Showing up and building: [AgorHash GitHub](https://github.com/bafio89/agorhash). We really think **AgorHash deserves a better UI**!\n'
-    + '2. Tipping the project with ALGOs!\n'
-    + '\n'
-    + 'AgorHash project maintainers commit to notarize donations\' usage on-chain.\n'
 
 class About extends React.Component {
 

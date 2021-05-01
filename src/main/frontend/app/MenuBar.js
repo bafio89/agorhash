@@ -34,7 +34,7 @@ class MenuBar extends React.Component {
         <Toolbar>
           <a href={'/'} style={{'textDecoration': 'none', 'color':'white', 'display':'contents'}}>
             <Typography variant="h6" className={classes.title}>
-              Agorhash
+              AgorHash
             </Typography>
           </a>
           <Button className={classes.about} color="inherit" href={"#/about"}>How it works</Button>

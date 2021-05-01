@@ -160,10 +160,10 @@ class MessageForm extends React.Component {
           </Typography>
           <Typography align={'center'} style={{marginTop: '5px'}} variant="h5">
            <Box style={{display: 'inline'}}> AgorHash is a </Box>
-            <Box style={{display: 'inline'}} fontWeight="fontWeightBold">public </Box>
-            <Box style={{display: 'inline'}}>,</Box>
+            <Box style={{display: 'inline'}} fontWeight="fontWeightBold">public</Box>
+            <Box style={{display: 'inline'}}>, </Box>
             <Box style={{display: 'inline'}} fontWeight="fontWeightBold">permissionless</Box>
-            <Box style={{display: 'inline'}}>,</Box>
+            <Box style={{display: 'inline'}}>, </Box>
             <Box style={{display: 'inline'}} fontWeight="fontWeightBold">decentralized </Box>
             <Box style={{display: 'inline'}}>and </Box>
             <Box style={{display: 'inline'}} fontWeight="fontWeightBold">uncensorable free speech protocol</Box>
