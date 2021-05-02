@@ -14,7 +14,8 @@ const useStyles = () => ({
     backgroundColor: '#f1f1f1'
   },
   sender: {
-    fontSize: '10px'
+    fontSize: '10px',
+    wordBreak: 'break-all'
   },
   senderLabel: {
     fontSize: '11px'

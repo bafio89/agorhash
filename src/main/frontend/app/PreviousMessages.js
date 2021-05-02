@@ -400,7 +400,7 @@ class PreviousMessages extends React.Component {
                             <div className={classes.sendAnswerButton}>
                               <CardActions>
                                 <Tooltip
-                                    title={'Do you like this content? Support author sending 1 AgoraHash'}>
+                                    title={'Do you like this content? Support author sending 1 AgorHash'}>
                                   <Button id={message.transaction.id} size="small"
                                           sender={message.transaction.sender}
                                           color="primary"

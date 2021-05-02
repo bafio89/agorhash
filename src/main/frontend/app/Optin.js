@@ -1,7 +1,7 @@
 import * as React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Typography from "@material-ui/core/Typography";
-import {Button, Grid} from "@material-ui/core";
+import {Button, Grid, Tooltip} from "@material-ui/core";
 import TransactionHelper from "./TransacionHelper";
 import {Alert} from "@material-ui/lab";
 
@@ -66,14 +66,15 @@ class Optin extends React.Component {
       <Grid container>
         <Grid item xs={4}/>
         <Grid item xs={4}>
-          <Typography align={'center'} variant="h5">Opt-In AgorHash's ASA and
-            start
-            sharing your thoughts!</Typography>
+          <Typography align={'center'} variant="h5">Join with your Algorand
+            account and start sharing your thoughts!</Typography>
           <br/>
+          <Tooltip title={"Opt-In AgorHash's ASA"}>
           <Button variant="contained"
                   color="primary"
                   className={classes.optinButton}
                   onClick={this.sendOptinTransaction}>Join</Button>
+          </Tooltip>
           <br/>
           <br/>
           <Alert style={{display: this.state.alert.display}}

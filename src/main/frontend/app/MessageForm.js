@@ -144,14 +144,7 @@ class MessageForm extends React.Component {
             </Box>
           </Typography>
           <Typography align={'center'} style={{marginTop: '5px'}} variant="h5">
-           <Box style={{display: 'inline'}}> AgorHash is a </Box>
-            <Box style={{display: 'inline'}} fontWeight="fontWeightBold">public</Box>
-            <Box style={{display: 'inline'}}>, </Box>
-            <Box style={{display: 'inline'}} fontWeight="fontWeightBold">permissionless</Box>
-            <Box style={{display: 'inline'}}>, </Box>
-            <Box style={{display: 'inline'}} fontWeight="fontWeightBold">decentralized </Box>
-            <Box style={{display: 'inline'}}>and </Box>
-            <Box style={{display: 'inline'}} fontWeight="fontWeightBold">uncensorable free speech protocol</Box>
+            <Box style={{display: 'inline'}}>Public, permissionless, decentralized and uncensorable free speech protocol</Box>
           </Typography>
         </Grid>
         <Grid item xs={2}>
@@ -173,7 +166,6 @@ class MessageForm extends React.Component {
       </Grid>
       <br/>
       <Optin selectedNet={this.state.selectedNet}/>
-      <br/>
       <br/>
       <Grid container>
         <Grid item xs={4}/>

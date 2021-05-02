@@ -13,7 +13,7 @@ const collaborate = '## Donate or Collaborate\n'
     + '\n'
     + 'Keeping AgorHash a protocol of freedom is up to us all. You can contribute in two ways:\n'
     + '\n'
-    + '1. Showing up and building: [AgorHash GitHub](https://github.com/bafio89/agorhash). We really think **AgorHash deserves a better UI**!\n'
+    + '1. Showing up and building: [AgorHash GitHub](https://github.com/bafio89/agorhash). We really think **AgorHash deserves a better UX**!\n'
     + '2. Tipping the project with ALGOs!\n'
     + '\n'
     + 'AgorHash project maintainers commit to notarize donations\' usage on-chain.\n'
@@ -33,6 +33,8 @@ class Collaborate extends React.Component {
           <Grid item xs={4}/>
         </Grid>
       </div>
+      <br/>
+      <br/>
     </div>
   }
 }

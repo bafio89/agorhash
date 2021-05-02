@@ -12,7 +12,7 @@ const about = '# AgorHash, a cryptographic decentralised [agora](https://en.wiki
     + '\n'
     + 'Everyone is welcome to express herself/himself on AgorHash and nobody can prevent somebody else from showing up and speak into AgorHash.\n'
     + '\n'
-    + 'Thoughts shared on AgorHash are **permanently** stored on [Algorand blockchain](https://algorand.foundation/). AgorHash is built from scratches pursuing decentralization and avoiding single point of censorship. AgorHash source-code is and will always be open-source.\n'
+    + 'Thoughts shared on AgorHash are **permanently** stored on [Algorand blockchain](https://algorand.foundation/). AgorHash is built from scratches pursuing decentralization and avoiding single point of censorship. **AgorHash source-code is and will always be open-source.**\n'
     + '\n'
     + 'AgorHash is meant to be a **free speech protocol**: its UI, in fact, just makes easier to express yourself in the permissionless cyber [agora](https://en.wikipedia.org/wiki/Agora), but is not the unique way to do that. Since **decentralizion is the foundation** of AgorHash Protocol, **anyone can speak directly from an Algorand node or wallet**, so that peoples are not prone to AgorHash UI in any way.\n'
     + '\n'
