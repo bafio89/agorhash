@@ -16,6 +16,7 @@ import TransactionHelper from "./TransacionHelper";
 import Typography from "@material-ui/core/Typography";
 import Support from "./Support";
 import withStyles from "@material-ui/core/styles/withStyles";
+import Optin from "./Optin";
 
 const useStyles = () => ({
 
@@ -46,7 +47,6 @@ class MessageForm extends React.Component {
     this.handleMessage = this.handleMessage.bind(this)
     this.handleFilterValue = this.handleFilterValue.bind(this)
     this.handleAmount = this.handleAmount.bind(this)
-    this.sendOptinTransaction = this.sendOptinTransaction.bind(this)
     this.sendMessage = this.sendMessage.bind(this)
     this.handleErrorResponse = this.handleErrorResponse.bind(this)
     this.handleOkResponse = this.handleOkResponse.bind(this)
@@ -78,21 +78,6 @@ class MessageForm extends React.Component {
     }
 
     return true
-  }
-
-  async sendOptinTransaction() {
-
-    let transactionHelper = new TransactionHelper(this.state.selectedNet)
-
-    let transaction = await transactionHelper.buildTransaction(0, undefined,
-        'optin')
-
-    try {
-      await transactionHelper.sendTransaction(transaction);
-      this.handleOkResponse()
-    } catch (error) {
-      this.handleErrorResponse(error)
-    }
   }
 
   async sendMessage() {
@@ -187,13 +172,7 @@ class MessageForm extends React.Component {
         </Grid>
       </Grid>
       <br/>
-      <Typography align={'center'} variant="h5">Opt-In AgorHash's ASA and start
-        sharing your thoughts!</Typography>
-      <br/>
-      <Button variant="contained"
-              color="primary"
-              style={{display: 'inline-block'}}
-              onClick={this.sendOptinTransaction}>Join</Button>
+      <Optin selectedNet={this.state.selectedNet}/>
       <br/>
       <br/>
       <Grid container>
