@@ -5,7 +5,7 @@ AgorHash is a **public, permissionless, decentralized and uncensorable free spee
 
 Everyone is welcome to express herself/himself on AgorHash and nobody can prevent somebody else from showing up and speak into AgorHash.
 
-Thoughts shared on AgorHash are **permanently** stored on [Algorand blockchain](https://algorand.foundation/). AgorHash is built from scratches pursuing decentralization and avoiding single point of censorship. AgorHash source-code is and will always be open-source.
+Thoughts shared on AgorHash are **permanently** stored on [Algorand blockchain](https://algorand.foundation/). AgorHash is built from scratches pursuing decentralization and avoiding single point of censorship. **AgorHash source-code is and will always be open-source.**
 
 AgorHash is meant to be a **free speech protocol**: its UI, in fact, just makes easier to express yourself in the permissionless cyber [agora](https://en.wikipedia.org/wiki/Agora), but is not the unique way to do that. Since **decentralizion is the foundation** of AgorHash Protocol, **anyone can speak directly from an Algorand node or wallet**, so that peoples are not prone to AgorHash UI in any way.
 
@@ -59,7 +59,7 @@ AgorHash is and will always be a free, public, permissionless, decentralised and
 
 Keeping AgorHash a protocol of freedom is up to us all. You can contribute in two ways:
 
-1. Showing up and building: [AgorHash GitHub](https://github.com/bafio89/agorhash). We really think **AgorHash deserves a better UI**!
+1. Showing up and building: [AgorHash GitHub](https://github.com/bafio89/agorhash). We really think **AgorHash deserves a better UX**!
 2. Tipping the project with ALGOs!
 
 AgorHash project maintainers commit to notarize donations' usage on-chain.
