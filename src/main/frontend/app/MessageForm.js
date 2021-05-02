@@ -96,13 +96,14 @@ class MessageForm extends React.Component {
       try {
         await transactionHelper.sendTransaction(transaction);
         this.handleOkResponse()
+
+        setTimeout(function () {
+          window.location.reload();
+        }.bind(this), 7000)
+
       } catch (error) {
         this.handleErrorResponse(error)
       }
-
-      setTimeout(function () {
-        window.location.reload();
-      }.bind(this), 7000)
     }
   }
 
@@ -146,6 +147,10 @@ class MessageForm extends React.Component {
           <Typography align={'center'} style={{marginTop: '5px'}} variant="h5">
             <Box style={{display: 'inline'}}>Public, permissionless, decentralized and uncensorable free speech protocol</Box>
           </Typography>
+          <br/>
+          <br/>
+          <Typography align={'center'} variant="h5">Join AgorHash
+            sending your first message!</Typography>
         </Grid>
         <Grid item xs={2}>
           <FormControl>
@@ -164,8 +169,6 @@ class MessageForm extends React.Component {
           </FormControl>
         </Grid>
       </Grid>
-      <br/>
-      <Optin selectedNet={this.state.selectedNet}/>
       <br/>
       <Grid container>
         <Grid item xs={4}/>

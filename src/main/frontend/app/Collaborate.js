@@ -24,14 +24,21 @@ class Collaborate extends React.Component {
     return <div><MenuBar/>
       <div style={{textAlign: 'left', fontFamily: 'Helvetica'}}>
         <Grid container>
-          <Grid item xs={4}/>
-          <Grid item xs={4}>
+          <Grid item xs={3}/>
+          <Grid item xs={6}>
             <ReactMarkdown children={collaborate}/>
             <br/>
-            <Support net={'Main net'}/>
+            <Grid container>
+              <Grid item xs={3}/>
+              <Grid item xs={6}>
+                <Support net={'Main net'}/>
+                <Grid item xs={3}/>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={4}/>
+          <Grid item xs={3}/>
         </Grid>
+
       </div>
       <br/>
       <br/>

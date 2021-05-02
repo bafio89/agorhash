@@ -243,13 +243,14 @@ class PreviousMessages extends React.Component {
       try {
         await transactionHelper.sendTransaction(transaction)
         this.handleOkResponse(transactionId)
+
+        setTimeout(function () {
+          window.location.reload();
+        }.bind(this), 7000)
+
       } catch (error) {
         this.handleErrorResponse(transactionId, error)
       }
-
-      setTimeout(function () {
-        window.location.reload();
-      }.bind(this), 7000)
     }
   }
 
@@ -453,7 +454,7 @@ class PreviousMessages extends React.Component {
                                 || ''
                                 : ''}
                             onChange={this.handleAnswer}
-                            style={{
+                            style={{marginTop:'10px',
                               display: `${this.state.showAnswerForm[message.transaction.id]}`
                             }}
                             className={classes.answerForm}
