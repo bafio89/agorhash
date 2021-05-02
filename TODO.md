@@ -5,7 +5,6 @@
 
 - [ ] backend per leggere solo gli address seguiti
 - [ ] ripulire warnings in compilazione frontend
-- [ ] Sistemare grafica
 
 - [x] sistemare testo della donation card
 - [x] sistemare risposte mettere say it louder al livello del send.
