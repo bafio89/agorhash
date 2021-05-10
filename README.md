@@ -13,7 +13,7 @@ AgorHash is meant to be a **free speech protocol**: its UI, in fact, just makes 
 
 **No central authority may stop people's speech on AgorHash**: as long as you have access to the Internet and your private key, you will be able to share your thoughts in the public, permissionless and decentralized cyber agora.
 
-## AgorHash Protocol
+## AgorHash Protocol 
 
 AgorHash Protocol aims to protect freedom of speech, organising thoughts and promoting thinkers' visibility through AGORHASH Algorand Standard Asset.
 
