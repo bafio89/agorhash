@@ -1,4 +1,3 @@
-Disattiva per: inglese
 # AgorHash, a cryptographic decentralised [agora](https://en.wikipedia.org/wiki/Agora).
 
 AgorHash is a **public, permissionless, decentralized and uncensorable free speech protocol**.
