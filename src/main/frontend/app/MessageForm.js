@@ -40,7 +40,7 @@ class MessageForm extends React.Component {
       errorAlgoAmount: false,
       alert: {display: 'none', text: '', severity: ''},
       amountAlert: {display: 'none', text: '', severity: ''},
-      selectedNet: 'Test Net',
+      selectedNet: 'Main Net',
       filterValue: ''
     }
 
@@ -153,7 +153,8 @@ class MessageForm extends React.Component {
             sending your first message!</Typography>
         </Grid>
         <Grid item xs={2}>
-          <FormControl>
+          <Typography align={'center'} variant="h6">Main Net</Typography>
+          <FormControl style={{display: 'none'}}>
             <Select
                 native
                 value={this.state.selectedNet}

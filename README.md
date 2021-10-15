@@ -1,4 +1,3 @@
-Disattiva per: inglese
 # AgorHash, a cryptographic decentralised [agora](https://en.wikipedia.org/wiki/Agora).
 
 AgorHash is a **public, permissionless, decentralized and uncensorable free speech protocol**.
@@ -25,7 +24,7 @@ AgorHash Protocol has been built in such a way that you are not prone to AgorHas
 
 You can share thoughts on AgorHash **from any Algorand wallet that supports note field**, such as an [Algorand Node](https://developer.algorand.org/docs/run-a-node/setup/install/), the [Algorand Mobile Wallet](https://algorandwallet.com/), [AlgoSigner](https://www.purestake.com/technology/algosigner/) or [MyAlgo Wallet](https://wallet.myalgo.com/home), following the protocol's rules:
 
-#### Share thoughts:
+#### Share thoughts: 
 
 1. Opt-In [AgorHash ASA](https://algoexplorer.io/asset/196447496) from your favorite wallet;
 2. Send a transaction of 0 AGORHASH to AgorHash Reserve Address, writing your message in the note field.
