@@ -1,6 +1,6 @@
 import React from "react";
 import MenuBar from "./MenuBar";
-import MessageForm from "./MessageForm";
+import PrincipalFeed from "./PrincipalFeed";
 
 class Home extends React.Component {
 
@@ -8,7 +8,7 @@ class Home extends React.Component {
     return <div>
       <MenuBar/>
       <br/>
-      <MessageForm/>
+      <PrincipalFeed/>
     </div>
   }
 }

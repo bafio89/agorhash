@@ -172,8 +172,8 @@ class MessageForm extends React.Component {
       </Grid>
       <br/>
       <Grid container>
-        <Grid item xs={4}/>
-        <Grid item xs={4}>
+        <Grid item xs={this.props.externalColumnWidth}/>
+        <Grid item xs={this.props.centralColumnWidth}>
           <div style={{backgroundColor: '#f7f7f7', borderStyle:'solid', borderWidth:'1px', borderColor:'#bfbebe'}}>
             <TextField
                 id="message" label="Write your message here"
@@ -227,7 +227,7 @@ class MessageForm extends React.Component {
                             addressFilter={this.state.filterValue}/>
         </Grid>
         <br/>
-        <Grid item xs={4}/>
+        <Grid item xs={this.props.externalColumnWidth}/>
       </Grid>
     </div>
   }
