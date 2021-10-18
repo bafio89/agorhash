@@ -20,23 +20,39 @@ const collaborate = '## Donate or Collaborate\n'
 
 class Collaborate extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    let externalColumnWidth = 3;
+    let centralColumnWidth = 6;
+    if (window.matchMedia("all and (max-width: 667px)").matches) {
+      externalColumnWidth = 1
+      centralColumnWidth = 10
+    }
+
+    this.state = {
+      externalColumnWidth: externalColumnWidth,
+      centralColumnWidth: centralColumnWidth
+    }
+  }
+
   render() {
     return <div><MenuBar/>
       <div style={{textAlign: 'left', fontFamily: 'Helvetica'}}>
         <Grid container>
-          <Grid item xs={3}/>
-          <Grid item xs={6}>
+          <Grid item xs={this.state.externalColumnWidth}/>
+          <Grid item xs={this.state.centralColumnWidth}>
             <ReactMarkdown children={collaborate}/>
             <br/>
             <Grid container>
-              <Grid item xs={3}/>
-              <Grid item xs={6}>
+              <Grid item xs={1}/>
+              <Grid item xs={10}>
                 <Support net={'Main net'}/>
-                <Grid item xs={3}/>
+                <Grid item xs={1}/>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={3}/>
+          <Grid item xs={this.state.externalColumnWidth}/>
         </Grid>
 
       </div>
