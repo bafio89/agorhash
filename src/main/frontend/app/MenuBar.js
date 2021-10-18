@@ -12,10 +12,7 @@ const useStyles = () => ({
     flexGrow: 1,
   },
   about: {
-    marginRight: '10px'
-  },
-  collaborate: {
-    marginRight: '62px'
+    marginRight: '7px'
   }
 });
 
@@ -38,7 +35,7 @@ class MenuBar extends React.Component {
             </Typography>
           </a>
           <Button className={classes.about} color="inherit" href={"#/about"}>How it works</Button>
-          <Button className={classes.collaborate} color="inherit" href={"#/collaborate"}>Collaborate</Button>
+          <Button color="inherit" href={"#/collaborate"}>Collaborate</Button>
         </Toolbar>
       </AppBar>
     </div>
