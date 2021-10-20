@@ -6,9 +6,9 @@ class PrincipalFeed extends React.Component {
   render() {
 
     if (window.matchMedia("all and (max-width: 667px)").matches) {
-      return <MessageForm externalColumnWidth={0} centralColumnWidth={12}/>
+      return <MessageForm mobileView={true}/>
     } else {
-      return <MessageForm externalColumnWidth={4} centralColumnWidth={4}/>
+      return <MessageForm mobileView={false}/>
     }
   }
 }

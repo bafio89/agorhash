@@ -31,6 +31,14 @@ class MessageForm extends React.Component {
 
   constructor(props) {
     super(props);
+
+    let externalColumnWidth = 4;
+    let centralColumnWidth = 4;
+    if(props.mobileView === true){
+      externalColumnWidth = 0;
+      centralColumnWidth = 12;
+    }
+
     this.state = {
       message: '',
       errorMessage: false,
@@ -41,7 +49,9 @@ class MessageForm extends React.Component {
       alert: {display: 'none', text: '', severity: ''},
       amountAlert: {display: 'none', text: '', severity: ''},
       selectedNet: 'Main Net',
-      filterValue: ''
+      filterValue: '',
+      externalColumnWidth: externalColumnWidth,
+      centralColumnWidth: centralColumnWidth
     }
 
     this.handleMessage = this.handleMessage.bind(this)
@@ -149,11 +159,12 @@ class MessageForm extends React.Component {
           </Typography>
           <br/>
           <br/>
+          <Optin selectedNet={this.state.selectedNet} mobileView={this.props.mobileView}/>
+          <br/>
           <Typography align={'center'} variant="h5">Join AgorHash
             sending your first message!</Typography>
         </Grid>
         <Grid item xs={2}>
-          <Typography align={'center'} variant="h6">Main Net</Typography>
           <FormControl style={{display: 'none'}}>
             <Select
                 native
@@ -172,8 +183,8 @@ class MessageForm extends React.Component {
       </Grid>
       <br/>
       <Grid container>
-        <Grid item xs={this.props.externalColumnWidth}/>
-        <Grid item xs={this.props.centralColumnWidth}>
+        <Grid item xs={this.state.externalColumnWidth}/>
+        <Grid item xs={this.state.centralColumnWidth}>
           <div style={{backgroundColor: '#f7f7f7', borderStyle:'solid', borderWidth:'1px', borderColor:'#bfbebe'}}>
             <TextField
                 id="message" label="Write your message here"

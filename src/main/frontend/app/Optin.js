@@ -16,8 +16,21 @@ class Optin extends React.Component {
   constructor(props) {
     super(props);
 
+    let externalColumnWidth = 4;
+    let firstCentralColumnWidth = 3;
+    let secondCentralColumnWidth = 1;
+
+    if (props.mobileView === true) {
+      externalColumnWidth = 0;
+      firstCentralColumnWidth = 11;
+      secondCentralColumnWidth = 1;
+    }
+
     this.state = {
-      alert: {display: 'none', text: '', severity: ''}
+      alert: {display: 'none', text: '', severity: ''},
+      externalColumnWidth: externalColumnWidth,
+      firstCentralColumnWidth: firstCentralColumnWidth,
+      secondCentralColumnWidth: secondCentralColumnWidth
     }
 
     this.sendOptinTransaction = this.sendOptinTransaction.bind(this)
@@ -64,23 +77,24 @@ class Optin extends React.Component {
 
     return <div>
       <Grid container>
-        <Grid item xs={4}/>
-        <Grid item xs={4}>
-          <Typography align={'center'} variant="h5">Join with your Algorand
-            account and start sharing your thoughts!</Typography>
-          <br/>
+        <Grid item xs={this.state.externalColumnWidth}/>
+        <Grid item xs={this.state.firstCentralColumnWidth}>
+          <Typography align={'center'} variant="h5">Optin to AgorHash
+            asset</Typography>
+        </Grid>
+        <Grid item xs={this.state.secondCentralColumnWidth} alignContent={'center'}>
           <Tooltip title={"Opt-In AgorHash's ASA"}>
-          <Button variant="contained"
-                  color="primary"
-                  className={classes.optinButton}
-                  onClick={this.sendOptinTransaction}>Join</Button>
+            <Button style={{marginRight: '70px'}} variant="contained"
+                    color="primary"
+                    className={classes.optinButton}
+                    onClick={this.sendOptinTransaction}>Join</Button>
           </Tooltip>
           <br/>
           <br/>
           <Alert style={{display: this.state.alert.display}}
                  severity={this.state.alert.severity}>{this.state.alert.text}</Alert>
         </Grid>
-        <Grid item xs={4}/>
+        <Grid item xs={this.state.externalColumnWidth}/>
       </Grid>
 
     </div>

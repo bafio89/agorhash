@@ -10,9 +10,6 @@ const useStyles = () => ({
   },
   title: {
     flexGrow: 1,
-  },
-  about: {
-    marginRight: '7px'
   }
 });
 
@@ -34,7 +31,7 @@ class MenuBar extends React.Component {
               AgorHash
             </Typography>
           </a>
-          <Button className={classes.about} color="inherit" href={"#/about"}>How it works</Button>
+          <Button color="inherit" href={"#/about"}>How it works</Button>
           <Button color="inherit" href={"#/collaborate"}>Collaborate</Button>
         </Toolbar>
       </AppBar>
