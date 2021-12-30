@@ -8,10 +8,10 @@ const testNetReserveAddress = "77B45T45DBC7CR4XHWVFD5QO4FNSP2UGIXCF7UVBCX4WO6FDG
 const mainNetReserveAddress = "BCRGQU4BFMMMTO4YADFPAO3WKZPE2VZILXFCPYOHFGVZRGWFOMC3BB4UPQ";
 
 const testNetToken = {
-  'X-API-Key': 'KmeYVcOTUFayYL9uVy9mI9d7dDewlWth7pprTlo9'
+  'X-API-Key': 'INSERT HERE YOUR PURESTAKE API TOKEN'
 }
 const mainNetToken = {
-  'X-API-Key': 'KmeYVcOTUFayYL9uVy9mI9d7dDewlWth7pprTlo9'
+  'X-API-Key': 'INSERT HERE YOUR PURESTAKE API TOKEN'
 }
 
 const testNetServer = 'https://testnet-algorand.api.purestake.io/ps2';
