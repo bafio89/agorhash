@@ -87,6 +87,7 @@ class PreviousMessages extends React.Component {
       errorFormAmountVisibility: [],
       answersValues: [],
       amountsValues: [],
+      initialAmountValue: 0,
       alert: {display: 'none', text: '', severity: ''},
       alertHug: {display: 'none', text: '', severity: ''},
       selectedNet: props.selectedNet,
@@ -340,11 +341,6 @@ class PreviousMessages extends React.Component {
                   || message.transaction.sender === this.props.addressFilter)
           .map((message) => {
 
-                // let answerLength = this.state.answerValues !== undefined &&
-                // this.state.answerValues[message.transaction.id] !== undefined
-                //     ? this.state.answerValues[message.transaction.id].length
-                //     || 0
-                //     : 0;
                 return <div>
                   <div className={classes.answerBorder}>
                     <div className={classes.cardWithAnswer}>
@@ -466,20 +462,19 @@ class PreviousMessages extends React.Component {
                       <Grid item xs={5}/>
                       <Grid item xs={3}>
                         <div style={{marginTop: '15px'}}>
+                          <Tooltip title={"Enter the amount of AgorHash token to send"}>
                           <TextField
                               id={"amount-" + message.transaction.id}
                               label="Say it louder!"
                               inputProps={{transactionid: message.transaction.id}}
                               error={this.state.errorFormAmountVisibility[message.transaction.id]}
                               multiline
-                              value={this.state.amountsValues !== undefined
-                                  ? this.state.amountsValues[message.transaction.id]
-                                  || 0
-                                  : 0}
+                              value={this.state.amountsValues[message.transaction.id]}
                               onChange={this.handleAmount}
                               className={classes.amountForm}
                               style={{display: `${this.state.showAmountForm[message.transaction.id]}`}}
                           />
+                          </Tooltip>
                         </div>
                       </Grid>
                       <Grid item xs={3} style={{display: 'flex'}}>

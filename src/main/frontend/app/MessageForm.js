@@ -7,7 +7,7 @@ import {
   CardContent, Divider,
   FormControl,
   Grid,
-  Select
+  Select, Tooltip
 } from "@material-ui/core";
 import algosdk from 'algosdk';
 import PreviousMessages from "./PreviousMessages";
@@ -203,14 +203,16 @@ class MessageForm extends React.Component {
               <Grid item xs={4}/>
               <Grid item xs={3}/>
               <Grid item xs={5}>
+                <Tooltip title={"Enter the amount of AgorHash token to send"}>
                 <TextField
                     id="amount" label="Say it louder!"
                     error={this.state.errorAmount}
                     multiline
-                    value={this.state.amount || 0}
+                    value={this.state.amount}
                     onChange={this.handleAmount}
                     style={{width: '100px'}}
                 />
+                </Tooltip>
                 <Button variant="contained"
                         color="primary"
                         style={{marginLeft: '15px', marginTop: '10px'}}
