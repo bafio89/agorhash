@@ -1,4 +1,4 @@
-# AgorHash, a cryptographic decentralised [agora](https://en.wikipedia.org/wiki/Agora).
+# [AgorHash](http://www.agorhash.com/), a cryptographic decentralised [agora](https://en.wikipedia.org/wiki/Agora).
 
 AgorHash is a **public, permissionless, decentralized and uncensorable free speech protocol**.
 
@@ -12,7 +12,11 @@ AgorHash is meant to be a **free speech protocol**: its UI, in fact, just makes 
 
 **No central authority may stop people's speech on AgorHash**: as long as you have access to the Internet and your private key, you will be able to share your thoughts in the public, permissionless and decentralized cyber agora.
 
-## AgorHash Protocol
+## Link to the web site
+
+http://www.agorhash.com/
+
+## AgorHash Protocol 
 
 AgorHash Protocol aims to protect freedom of speech, organising thoughts and promoting thinkers' visibility through AGORHASH Algorand Standard Asset.
 
